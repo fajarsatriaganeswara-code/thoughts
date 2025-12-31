@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thought</title>
+    <link rel="stylesheet" href="thought.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💭 My Thoughts</h1>
+            <p>A personal space to capture ideas, questions, and reflections</p>
+        </div>
+
+        <div id="thoughtsContainer">
+            <div class="thought-card">
+                <div class="question">
+                    <p></p>
+                </div>
+                <div class="answer">
+                    <p></p>
+                </div>
+                <div class="date">Added today</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add button -->
+    <div class="add-btn" onclick="openModal()">+</div>
+
+    <!-- modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Add new thoughts</h2>
+
+            <div class="form-group"> <label>Questions/Topic</label>
+                <input type="text" id="questionInput" placeholder="What's on your mind?">
+            </div>
+
+            <div class="form-group"><label>Your Thoughts</label>
+                <textarea id="answerInput" placeholder="Write your thoughts here..."></textarea>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="addThought()">Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="thought.js"></script>
+    </body>
+
+</html>
